@@ -6,4 +6,7 @@
     <string name="startGame">شروع بازی</string>
     <string name="exitGame">بازگشت</string>
     <string name="score">0</string>
+    <string name="fly">می پره</string>
+    <string name="notFly">نمی پره</string>
+    <string name="goForward">رد کردن آموزش</string>
 </resources>

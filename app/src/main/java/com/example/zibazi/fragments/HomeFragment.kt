@@ -1,6 +1,6 @@
 package com.example.zibazi.fragments
 
-import android.app.Activity
+
 import android.app.Dialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,9 +9,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import android.widget.Button
-import android.widget.TextView
-import androidx.fragment.app.FragmentActivity
-import androidx.navigation.fragment.findNavController
 import com.example.zibazi.R
 import com.example.zibazi.databinding.FragmentHomeBinding
 
@@ -26,7 +23,7 @@ class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
@@ -58,9 +55,14 @@ class HomeFragment : Fragment() {
         }
         startBtn.setOnClickListener {
             dialog.dismiss()
+            playVideo()
         }
         dialog.show()
 
+    }
+    private fun playVideo(){
+        binding.moviePlayer.setVideoPath("https://zibazi.tv/wp-content/uploads/ویدیو-هوش-بازی-سرعت-عمل-بازی-کلاغ-پر-5.mp4")
+        binding.moviePlayer.start()
     }
 
 }
