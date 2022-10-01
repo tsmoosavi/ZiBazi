@@ -2,4 +2,8 @@
     <string name="app_name">ZiBazi</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dialogTitle">بازی رو شروع کنیم؟</string>
+    <string name="startGame">شروع بازی</string>
+    <string name="exitGame">بازگشت</string>
+    <string name="score">0</string>
 </resources>
